@@ -1,0 +1,215 @@
+body {
+    min-width: 992px !important;
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.5;  
+  }
+
+hr.divider {
+    max-width: 10rem;
+    border-color: #102b4c;
+  }
+.position{
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+ }
+
+ .contenedor{
+    font-family:arial;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+
+
+/******************* nav bar *********************/
+
+
+
+.nav{
+  list-style-type: none;
+  margin: 0;
+  overflow: hidden;
+  background-color: #000; 
+  position: fixed; 
+  width: 100%;
+}
+
+.nav li{
+    float: left;
+}
+
+.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+.nav li.right {
+  float: right;
+  padding-right: 6rem;
+}
+
+.nav-item{
+    float: left;
+}
+
+.nav-item a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .nav-item a:hover:not(.active) {
+    background-color: #111;
+  }
+
+  .active {
+    background-color: #4CAF50;
+  }
+  .right{
+      float: right;
+  }
+
+
+  
+/***************** Header **********************/
+
+
+
+header.masthead {
+  height: 100vh;
+  min-height: 40rem;
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 4.5rem);
+    background: linear-gradient(to bottom, rgb(206 177 177 / 80%) 0%, rgb(0 0 0 / 80%) 100%), url(../img/goto1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+
+  .align-items-left {
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .align-items-center {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+ .align-self-end {
+    align-self: flex-end !important;
+  }
+
+  .lex-img_header{
+    width: 300px;
+    padding-top: 6rem ;
+  }
+
+  .texto-pri{
+    padding-top: 1rem ;
+    color:white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+
+
+/***************** Seccion de servicios **********************/
+
+
+
+  .page-section {
+    padding: 4rem;
+    background-color: #c1dfecf5;
+  }
+
+.seccion{
+  width: 25%;
+  float: left;
+  text-align: center;
+}
+
+.seccion h3{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: large;
+}
+
+#servicios{
+  padding: 4rem;
+}
+
+
+
+/****************** Contactos **********************/
+
+
+.nolist{
+  text-decoration: none;
+  list-style-type: none;
+}
+.position2{
+  width: 25%;
+ /* padding-right: 15px;*/
+ /* padding-left: 15px;*/
+}
+
+
+
+/****************** footer **********************/
+
+
+.bg-light {
+  background-color: #000;
+  color: aliceblue;
+  text-align: center;
+  font-style: oblique;
+  font-size: large;
+}
+
+
+.p-5{
+  padding: 3rem;
+}
+
+
+
+/***************** Media query *****************/
+
+
+
+@media (min-width: 992px){
+    header.masthead {
+        min-height: 40rem;
+        padding-top: 4.5rem;
+        padding-bottom: 0;
+    }
+}
+
+
+@media screen and (max-width: 600px){
+    .nav li.right, .nav li {
+        float: none;
+    }
+}
